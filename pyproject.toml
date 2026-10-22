@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roadanomaly"
+version = "1.0.0"
+description = "Road anomaly detection in traffic surveillance videos with pre-trained CNNs and rolling prediction (IEEE ICMI 2024)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Sarfaraz Natha" }, { name = "Muhammad Arif" }, { name = "Syed Shahryar Jamil" },
+  { name = "Fareed Ahmed Jokhio" }, { name = "Muslim Jameel Syed" },
+]
+dependencies = ["numpy", "pillow", "scikit-learn>=1.2", "pyyaml", "opencv-python-headless>=4.8"]
+
+[project.optional-dependencies]
+train = ["torch>=2.0", "torchvision>=0.15"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

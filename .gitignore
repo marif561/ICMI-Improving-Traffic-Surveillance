@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+runs/
+outputs/
+.DS_Store
+
+# Datasets and videos are not committed — get RAD from Zenodo
+data/*/
+*.mp4
+*.avi
+*.zip

@@ -1,0 +1,26 @@
+# Fine-tuning settings. Standard transfer-learning values; replace with the paper's exact
+# learning rate, momentum and augmentation settings where they differ.
+backbone: inception_v3     # best model in the paper (98.81% accuracy)
+image_size: null           # null = backbone default (299 for InceptionV3, 224 otherwise)
+pretrained: true
+freeze_backbone: false
+dropout: 0.5
+
+batch_size: 32
+epochs: 25
+learning_rate: 1.0e-3      # SGD
+momentum: 0.9
+weight_decay: 1.0e-4
+lr_step: 10                # decay the learning rate every N epochs
+lr_gamma: 0.1
+
+val_size: 0.15             # used only when the data folder has no train/val/test split
+test_size: 0.15
+
+augmentation:
+  zoom: 0.15
+  rotation: 30
+  shift: 0.2
+  shear: 15
+  hflip: true
+  color_jitter: [0.2, 0.2, 0.2]

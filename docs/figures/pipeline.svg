@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <style>
+      .t{font-size:15px;font-weight:600;fill:#1f2328;text-anchor:middle}
+      .s{font-size:12px;fill:#57606a;text-anchor:middle}
+      .ln{stroke:#57606a;stroke-width:1.6;fill:none;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect width="960" height="280" fill="#ffffff"/>
+  <text x="480" y="30" font-size="18" font-weight="700" fill="#1f2328" text-anchor="middle">Road anomaly detection in surveillance video</text>
+
+  <rect x="10" y="95" width="150" height="80" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text class="t" x="85" y="127">Surveillance</text>
+  <text class="t" x="85" y="146">video</text>
+
+  <rect x="185" y="95" width="150" height="80" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text class="t" x="260" y="124">Frames</text>
+  <text class="s" x="260" y="144">resize · normalise</text>
+  <text class="s" x="260" y="160">augment (training)</text>
+
+  <rect x="360" y="95" width="180" height="80" rx="10" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.5"/>
+  <text class="t" x="450" y="124">Pre-trained CNN</text>
+  <text class="s" x="450" y="144">InceptionV3 (best)</text>
+  <text class="s" x="450" y="160">fine-tuned · SGD + momentum</text>
+
+  <rect x="565" y="95" width="170" height="80" rx="10" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.5"/>
+  <text class="t" x="650" y="124">Rolling prediction</text>
+  <text class="s" x="650" y="144">average last K frames</text>
+  <text class="s" x="650" y="160">no label flicker</text>
+
+  <rect x="760" y="70" width="190" height="130" rx="10" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.5"/>
+  <text class="t" x="855" y="97">Anomaly label</text>
+  <text class="s" x="855" y="120">accident · fighting</text>
+  <text class="s" x="855" y="138">car fire · armed snatching</text>
+  <text class="s" x="855" y="172" style="font-weight:600;fill:#0969da;font-size:14px">accuracy 98.81%</text>
+
+  <path class="ln" d="M160,135 H182"/>
+  <path class="ln" d="M335,135 H357"/>
+  <path class="ln" d="M540,135 H562"/>
+  <path class="ln" d="M735,135 H757"/>
+  <text class="s" x="480" y="255">Road Anomaly Dataset (RAD) · videos and images from Pakistan · CC BY 4.0 on Zenodo</text>
+</svg>

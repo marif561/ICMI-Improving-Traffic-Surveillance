@@ -1,0 +1,2 @@
+model,method,accuracy_percent,source
+InceptionV3,pre-trained CNN + data augmentation + rolling prediction,98.81,paper abstract

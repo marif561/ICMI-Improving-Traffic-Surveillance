@@ -1,0 +1,8 @@
+numpy>=1.23
+pillow>=9.0
+scikit-learn>=1.2
+pyyaml>=6.0
+opencv-python-headless>=4.8
+torch>=2.0
+torchvision>=0.15
+pytest>=7.0

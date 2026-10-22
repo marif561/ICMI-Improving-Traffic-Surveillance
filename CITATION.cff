@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Road Anomaly Detection in Traffic Surveillance Videos"
+repository-code: "https://github.com/marif561/ICMI-Improving-Traffic-Surveillance"
+license: MIT
+authors:
+  - family-names: Natha
+    given-names: Sarfaraz
+    orcid: "https://orcid.org/0009-0008-3254-8720"
+  - family-names: Arif
+    given-names: Muhammad
+  - family-names: Syed
+    given-names: Shahryar Jamil
+  - family-names: Jokhio
+    given-names: Fareed Ahmed
+  - family-names: Syed
+    given-names: Muslim Jameel
+keywords: [road anomaly detection, traffic surveillance, video, CNN, InceptionV3, transfer learning]
+preferred-citation:
+  type: conference-paper
+  title: "Improving Traffic Surveillance: Deep Learning Approach for Road Anomaly Detection in Videos"
+  collection-title: "2024 IEEE 3rd International Conference on Computing and Machine Intelligence (ICMI)"
+  publisher:
+    name: "IEEE"
+  start: 1
+  end: 7
+  year: 2024
+  doi: "10.1109/ICMI60790.2024.10585797"
+  authors:
+    - family-names: Natha
+      given-names: Sarfaraz
+    - family-names: Arif
+      given-names: Muhammad
+    - family-names: Syed
+      given-names: Shahryar Jamil
+    - family-names: Jokhio
+      given-names: Fareed Ahmed
+    - family-names: Syed
+      given-names: Muslim Jameel
+references:
+  - type: dataset
+    title: "Comprehensive Dataset for Detecting Road Anomalies in Diverse Real-World Situations"
+    authors:
+      - family-names: Natha
+        given-names: Sarfaraz
+    publisher:
+      name: "Zenodo"
+    year: 2024
+    doi: "10.5281/zenodo.13832363"

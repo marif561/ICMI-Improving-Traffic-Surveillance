@@ -1,0 +1,22 @@
+# Fast settings for tests on synthetic images
+backbone: mobilenet_v2
+image_size: 64
+pretrained: false
+freeze_backbone: false
+dropout: 0.2
+batch_size: 8
+epochs: 1
+learning_rate: 1.0e-2
+momentum: 0.9
+weight_decay: 0.0
+lr_step: 10
+lr_gamma: 0.1
+val_size: 0.25
+test_size: 0.25
+augmentation:
+  zoom: 0.1
+  rotation: 10
+  shift: 0.1
+  shear: 5
+  hflip: true
+  color_jitter: [0.1, 0.1, 0.1]
